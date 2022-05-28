@@ -13,33 +13,37 @@ const Account =({navigation})=>{
           ref={(input) => { this.firstTextInput = input; }}
           onChangeText={text=>onChangeText(text)}
           onSubmitEditing={() => { this.secondTextInput.focus(); }}
-          autoCapitalize='words'/>
+          autoCapitalize='words'
+          />
         <TextInput 
           placeholder="Last Name"
           ref={(input) => { this.secondTextInput = input; }}
           onChangeText={text=>onChangeText(text)}
           onSubmitEditing={() => { this.thirdTextInput.focus(); }}
-          autoCapitalize="words"/>
+          autoCapitalize="words"
+          />
         <TextInput 
           placeholder="Email"
           ref={(input) => { this.thirdTextInput = input; }}
           onChangeText={text=>onChangeText(text)}
-          onSubmitEditing={() => { this.fourthTextInput.focus(); }}/>
+          onSubmitEditing={() => { this.fourthTextInput.focus(); }}
+          />
         <TextInput 
           placeholder="Phone Number"
           ref={(input) => { this.fourthTextInput = input; }}
           onChangeText={text=>onChangeText(text)}
           onSubmitEditing={() => { this.firstTextInput.focus(); }}
-          keyboardType='default'/>
+          keyboardType='default'
+          />
         <TouchableOpacity>
-         <Text>Save</Text>
+         <Text> Save </Text>
         </TouchableOpacity>
  
         <Pressable onPress={() => navigation.navigate('Home')}>
-          <Text> Go to Home</Text>
+          <Text> Home </Text>
         </Pressable>
         <Pressable onPress={() => navigation.navigate('Posts')}>
-          <Text> Go to Posts</Text>
+          <Text> Posts </Text>
         </Pressable>
       </View>
     </View>
